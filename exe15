@@ -1,0 +1,22 @@
+int main()
+{
+int a[4],b[4];
+int i=0;
+
+while(i<4){
+    printf("insira quatro numeros para a matriz A:");
+    scanf("\n%d", &a[i]);
+    i++;
+}
+i=0;
+while(i<4){
+    b[i] = a[i]*3;
+    i++;
+}
+i=0;
+while(i<4){
+printf(" \n A[%d] X B[%d] = %d", i,i,a[i]*3);
+i++;
+}
+    return 0;
+}
