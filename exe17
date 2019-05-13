@@ -1,0 +1,22 @@
+
+int main()
+{
+    int a[4];
+    int i=0;
+
+    while(i<4){
+        printf("insira 4 numeros:");
+        scanf("\n%d", &a[i]);
+        i++;
+    }
+    i=0;
+    while(i<4){
+        if(a[i]>=10){
+               printf("\nnumeros que são maiores que 10:%d", a[i]);
+        }
+        i++;
+    }
+    return 0;
+    }
+
+
