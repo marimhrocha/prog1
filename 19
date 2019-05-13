@@ -1,0 +1,28 @@
+
+
+int main()
+{
+    int a[10];
+    int i=0, aux, j=0;
+
+    while(i<10){
+        printf("digite 10 numeros:");
+        scanf("\n%d", &a[i]);
+        i++;
+    }
+    i=0;
+    j=9;
+    while(i<5){
+        aux=a[i];
+		a[i]=a[j];
+		a[j]=aux;
+		i++;
+		j--;
+}
+i=0;
+    while(i<10){
+        printf("\n%d", a[i]);
+        i++;
+    }
+    return 0;
+}
