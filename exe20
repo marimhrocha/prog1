@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*Faça um algoritmo que leia 30 valores do tipo inteiro e armazene-os em um vetor. A seguir,
+o algoritmo deverá informar (1) todos os números pares que existem no vetor; (2) o menor e
+o maior valor existente no vetor; (3) quantos dos valores do vetor são maiores que a média
+desses valores*/
+
+int main()
+{
+   int a[10], i=0,aux, maior, menor;
+   float soma;
+
+   while(i<10){
+        printf("informe os numeros:");
+        scanf("\n%d", &a[i]);
+        i++;
+   }
+   i=0;
+   while(i<10){
+        if(a[i]%2==0)
+            printf("\n(1) números pares:%d", a[i]);
+            i++;
+   }
+   i=0;
+   maior=a[i];
+   menor=a[i];
+   while(i<10){
+        if(a[i]>=maior)
+            maior=a[i];
+        else if(a[i]<=menor)
+            menor=a[i];
+            i++;
+   }
+    printf("\n(2) menor numero:%d, maior numero:%d", menor, maior);
+    i=0;
+   while(i<10){
+        soma+=a[i];
+        i++;
+   }
+    soma=soma/10;
+    printf("\n media:%f", soma);
+
+    i=0;
+    aux=0;
+   while(i<10){
+        if(a[i]>soma)
+            aux++;
+            i++;
+   }
+   printf("\n(3) numeros q sao maiores q a media:%d", aux);
+
+   return 0;
+   }
+
